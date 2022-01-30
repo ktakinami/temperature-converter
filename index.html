@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Temperature Converter</h1>
+        <section class="container">
+            <label id="title">Enter a degree value and select its unit</label>
+            <div id="input-box">
+                <input type="text" id="degree-input" onfocus="clearOnFocus()">
+                <!--  <input type="number" id="degree-input"
+                oninput="javascript: if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5" onfocus="clearOnFocus()">  -->
+            </div>
+            <div class="degree-option">
+                <button id="celsius" onclick="fromCelsius()">Celsius</button>
+                <button id="fahrenheit" onclick="fromFahrenheit()">Fahrenheit</button>
+                <button id="kelvin" onclick="fromKelvin()">Kelvin</button>
+            </div>
+            <div id="results">
+                <p id="result-1" class="result">RES 1</p><br>
+                <p id="result-2" class="result">RES 2</p><br>
+                <p id="result-3" class="result">RES 3</p>
+            </div>
+                <button id="reset" onclick="reset()">RESET</button>
+        </section>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
