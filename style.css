@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif, arial;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 60px;
+}
+
+/** OUTER CONTAINER **/
+.main-container {
+    width: 50%;
+    box-shadow: 0px 10px 10px grey;
+    margin: 0 auto;
+    border: 1px solid gray;
+    margin-top: 30px;
+}
+
+/** INNER CONTAINER **/
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    display: block;
+    text-align: center;
+    padding: 0 0 15px;
+    font-size: 1.8em;
+}
+
+#input-box {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#degree-input {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+.degree-option {
+    display: flex;
+    justify-content: center;
+}
+
+/** OPTION BUTTON SETTING **/
+.degree-option button {
+    width: 100px;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px black solid;
+
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ec8627;
+    color: #000;
+}
+
+.degree-option button:hover {
+    background-color: #3fc2eb;
+    color: #fff;
+    transition: 0.3s;
+    border: none;
+}
+
+.degree-option button:focus {
+    background-color: #3fc2eb;
+    color: #fff;
+}
+
+.degree-option button:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/** RESULT BOX  **/
+#results {
+    display: none;
+    text-align: center;
+    margin: 40px 0 0;
+    padding: 10px;
+    background-color: #e5f783;
+}
+
+#result-1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.result {
+    font-size: 1.3em;
+    color: #000;
+}
+
+/** RESET BUTTON **/
+#reset {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    margin: 40px auto;
+    font-size: 1.4em;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ec8627;
+}
+
+#reset:hover {
+    background-color: #3fc2eb;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/** SMARTPHONE **/
+@media (max-width: 415px) {
+    body {
+        overflow-y: hidden;
+    }
+    .main-container {
+        width: 96%;
+        margin-top: 3px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #title {
+        font-size: 1.3em;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    #results {
+        margin-top: 25px;
+    }
+    #results .result {
+        font-size: 1em;
+    }
+    #reset {
+        font-size: 1em;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    .degree-option button {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 416px) and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .main-container {
+        width: 960px;
+    }
+}
